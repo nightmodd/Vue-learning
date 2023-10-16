@@ -18,10 +18,9 @@
     </header>
     <section id="user-goal">
       <h2>My Course Goal</h2>
-      <p>Goal: {{courseFirstGoal}}</p>
       <p>{{1+1}}</p>
       <p>Learn more about <a v-bind:href="vueLink">Vue</a></p>
-      <p>{{outputGoal()}}</p>
+      <p v-html="outputGoal()"></p>
       <p>{{avilable ? "YAAAHOOO" : "SAAADGE"}}</p>
     </section>
   </body>
